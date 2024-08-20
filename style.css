@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(0, 0%, 98%);
+}
+
+h1, h2, p {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    color: rgb(68, 68, 68);
+}
+
+.cards div {
+    border-radius: 1rem;
+    box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.055);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.cards div p {
+    margin-bottom: 3rem;
+    color: rgb(161, 161, 161);
+}
+
+.cards div img {
+    float: right;
+}
+
+.card-1 {
+    border-top: 0.2rem solid hsl(212, 86%, 64%);
+}
+
+.card-2 {
+    border-top: 0.2rem solid hsl(0, 78%, 62%);
+}
+
+.card-3 {
+    border-top: 0.2rem solid hsl(34, 97%, 64%);
+}
+
+.card-4 {
+    border-top: 0.2rem solid hsl(180, 62%, 55%)
+}
+
+@media (max-width: 430px) {
+    body {
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    body > * {
+        margin-bottom: 1rem;
+    }
+    .resume {
+        margin-top: 3rem;
+        font-size: 0.875rem;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    .resume > div {
+        margin-bottom: 1rem;
+    }
+    .resume span {
+        font-weight: 200;
+    }
+    .resume p {
+        font-size: 1.15rem;
+        line-height: 1.5em;
+        font-weight: 400;
+        color: rgb(161, 161, 161);
+    }
+}
